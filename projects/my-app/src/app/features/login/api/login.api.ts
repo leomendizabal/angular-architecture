@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { User } from '../models/user.model';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root' //TODO: investigate how to provide a service un a particular module: ie. LoginModule
 })
 export class LoginApi {
 

@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { LoginFacade } from './login.facade';
 
 @Component({
   selector: 'cfm-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor(private loginFacade: LoginFacade) { 
+    
   }
 
 }

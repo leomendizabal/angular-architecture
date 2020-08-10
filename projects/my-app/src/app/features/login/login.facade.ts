@@ -4,7 +4,9 @@ import { LoginApi } from "./api/login.api";
 import { User } from "./models/user.model";
 import { LoginState } from "./state/login.state";
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class LoginFacade {
   constructor(private authenticationApi: LoginApi, private authenticationState: LoginState) {}
 
