@@ -8,7 +8,7 @@ import { User } from '../models/user.model';
 })
 export class LoginApi {
 
-  readonly API_URL = 'http://demo0354281.mockable.io/api/signup';
+  readonly API_URL = 'http://demo0354281.mockable.io/api/signin';
 
   constructor(private http: HttpClient) {}
 

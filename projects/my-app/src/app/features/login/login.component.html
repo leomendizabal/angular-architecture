@@ -1,11 +1,13 @@
 <section class="login">
-    <mat-form-field appearance="fill">
-        <mat-label>username</mat-label>
-        <input matInput>
-    </mat-form-field>
-    <mat-form-field appearance="fill">
-        <mat-label>password</mat-label>
-        <input matInput>
-    </mat-form-field>
-    <button mat-button color="primary">Login</button>
+    <form [formGroup]="loginForm" (ngSubmit)="submit()">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" name="username" class="form-control" formControlName="username">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="text" name="password" class="form-control" formControlName="password">
+        </div>
+        <button mat-button color="primary" type="submit">Login</button>
+    </form>
 </section>
